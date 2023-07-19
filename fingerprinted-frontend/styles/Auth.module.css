@@ -1,0 +1,21 @@
+.container {
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    background-color: #99a8ff;
+    background-image: radial-gradient(
+        at 49% 4%,
+        hsla(202, 61%, 85%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 80% 97%, hsla(316, 50%, 84%, 1) 0px, transparent 50%),
+      radial-gradient(at 40% 54%, hsla(236, 68%, 70%, 1) 0px, transparent 50%),
+      radial-gradient(at 75% 92%, hsla(286, 80%, 65%, 1) 0px, transparent 50%),
+      radial-gradient(at 77% 95%, hsla(217, 91%, 58%, 1) 0px, transparent 50%),
+      radial-gradient(at 37% 57%, hsla(292, 68%, 74%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 73%, hsla(277, 62%, 75%, 1) 0px, transparent 50%);
+}

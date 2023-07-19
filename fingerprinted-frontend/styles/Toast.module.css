@@ -1,0 +1,63 @@
+.container {
+  position: fixed;
+  z-index: 1000;
+  line-height: 1;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+
+.animated {
+  animation: toast-in-right 0.4s ease-out;
+}
+
+.notification {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: 0.3s ease-out;
+  margin-left: 225px;
+}
+
+.toast {
+  height: auto;
+  width: 450px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.container button {
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  word-wrap: break-word;
+  line-height: 1;
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
